@@ -1,0 +1,153 @@
+/* Reset */
+body {
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  background: #eef2f7;
+}
+
+/* Page Wrapper (NEW BORDER EFFECT) */
+.container {
+  max-width: 760px;
+  margin: 40px auto;
+  padding: 30px;
+  border-radius: 20px;
+
+  /* 👇 main border + glow */
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  background: #ffffff;
+  box-shadow:
+    0 10px 30px rgba(0, 0, 0, 0.08),
+    inset 0 1px 0 rgba(255, 255, 255, 0.6);
+
+  text-align: center;
+}
+
+/* Title */
+h1 {
+  font-size: 28px;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin-bottom: 25px;
+}
+
+/* Cards */
+.card {
+  background: linear-gradient(145deg, #ffffff, #f5f7fb);
+  border-radius: 16px;
+  padding: 25px;
+  margin-bottom: 20px;
+
+  /* 👇 modern soft border */
+  border: 1px solid rgba(0, 0, 0, 0.05);
+
+  /* 👇 depth */
+  box-shadow:
+    0 6px 18px rgba(0, 0, 0, 0.06),
+    inset 0 1px 0 rgba(255, 255, 255, 0.7);
+
+  transition: all 0.25s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px) scale(1.01);
+  box-shadow:
+    0 12px 28px rgba(0, 0, 0, 0.1);
+}
+
+/* Headings */
+.card h2 {
+  color: #333;
+  margin-bottom: 10px;
+}
+
+/* Queue */
+.queue {
+  font-size: 22px;
+  font-weight: 600;
+  color: #007aff;
+}
+
+/* Buttons */
+button {
+  background: linear-gradient(135deg, #007aff, #00c6ff);
+  border: none;
+  padding: 12px 22px;
+  border-radius: 10px;
+  color: white;
+  font-size: 15px;
+  cursor: pointer;
+  transition: all 0.25s ease;
+
+  box-shadow: 0 4px 12px rgba(0, 122, 255, 0.3);
+}
+
+button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(0, 122, 255, 0.4);
+}
+
+/* Token box */
+.token-box {
+  margin-top: 15px;
+  padding: 15px;
+  border-radius: 12px;
+  background: #f4f7fc;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+/* Message */
+.message {
+  margin-top: 15px;
+  font-weight: 500;
+  color: #666;
+}
+
+/* 🌙 Toggle button */
+.toggle {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: #222;
+  color: white;
+  border-radius: 20px;
+  padding: 8px 14px;
+  font-size: 13px;
+}
+
+/* 🌙 DARK MODE */
+body.dark {
+  background: #0f172a;
+  color: #e2e8f0;
+}
+
+body.dark .container {
+  background: #111827;
+  border: 1px solid #1f2937;
+}
+
+body.dark .card {
+  background: #1e293b;
+  border: 1px solid #334155;
+}
+
+body.dark h1,
+body.dark h2 {
+  color: #f1f5f9;
+}
+
+body.dark .queue {
+  color: #38bdf8;
+}
+
+body.dark button {
+  background: linear-gradient(135deg, #2563eb, #38bdf8);
+}
+
+body.dark .token-box {
+  background: #0f172a;
+  border: 1px solid #334155;
+}
+
+body.dark .message {
+  color: #94a3b8;
+}
